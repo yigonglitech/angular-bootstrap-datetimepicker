@@ -486,7 +486,7 @@
       'zh-tw': {previous: '上一頁', next: '下一頁'}
     }
 
-    var screenReader = defaultLocalization[moment.locale().toLowerCase()]
+    var screenReader = defaultLocalization[moment.locale('zh-cn').toLowerCase()]
 
     return angular.extend({}, defaultConfiguration, {screenReader: screenReader})
   }
